@@ -1,0 +1,17 @@
+{
+  "name": "the-transformer",
+  "version": "1.0.0",
+  "description": "Renders html for the consumer",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Adrian Roworth",
+  "license": "MIT",
+  "dependencies": {
+    "nunjucks": "^3.2.0"
+  }
+}
