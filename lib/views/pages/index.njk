@@ -1,0 +1,23 @@
+<section>
+    {# <h1 class="main__heading" id="top">Texas Help<sup><sup>'</sup></sup>em</h1> #}
+    <div class="card-table card-table--private">
+        <p class="card-table__title">What cards are in play?</h2>
+        <div class="card-table__card-selector" id="card-selector">
+            <form id="card-selector" class="card-table__card-selector-form">
+                {% set cardNumbers = ["1", "2", "3", "4", "5", "6", "7"] %}
+                {% set cardSuits = ["s", "d", "c", "h"] %}
+                {% set cardValues = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"] %}
+
+                {% for cardNumber in cardNumbers %}
+                    <select id="card-table__card-selector-input-{{cardNumber}}" class="card-table__card-selector-input card-table__card-selector-input--{{cardNumber}}">
+                        {% for cardSuit in cardSuits %}
+                            {% for cardValue in cardValues %}
+                                <option id="{{cardSuit}}-{{cardValue}}" name="{{cardSuit}}-{{cardValue}}">{{cardSuit}}-{{cardValue}}</option>
+                            {% endfor %}
+                        {% endfor %}
+                    </select>
+                {% endfor %}
+            </form>
+        </div>
+    </div>
+</section>

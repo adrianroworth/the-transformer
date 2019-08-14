@@ -33,3 +33,4 @@ node_modules/
 !README.md
 !src/**
 !test/**
+!lib/**
